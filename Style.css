@@ -5,28 +5,64 @@ body
     padding-left: 5px;
     padding-right: 5px;
     font-family: 'Times New Roman', Times, serif;
-    line-height: 20px;
-    
-}
-
-.Страница
-{
-    max-width: 750px;
+    line-height: 20px; 
+    max-width: 1000px;
     margin: auto;
 }
 
-#Заголовок_сайта
+header
 {
     background-color: black;
     color: white;
-    padding-top: 1px;
-    padding-bottom: 10px;
+    padding-top: 15px;
     padding-left: 20px;
-    margin: 0px;
     border: 3px solid;
     border-color:rgb(223, 223, 223);
-    
+}
 
+article
+{
+    padding-bottom: 30px;
+}
+
+footer
+{
+    border-top: 2px solid;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#Заголовок_раздела
+{
+    padding-bottom: 10px;
+}
+
+p, h2, h3, h4
+{
+    text-indent: 30px;
+}
+
+ul, ol
+{
+    line-height: 30px;
+}
+
+table
+{
+    margin:auto ;
+    width: 75%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+table tr:nth-child(odd) /* even */
+{
+    background: whitesmoke;
+}
+
+td
+{
+    border: 1px solid;
 }
 
 #Примеры
@@ -37,13 +73,18 @@ body
     border-color: black;
 }
 
-#Изображение
-{
-    /*max-width: 500px;
-    margin: auto;*/
-}
-
 .Картинка
 {
-    width: 200px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.Анкета 
+{
+    display: block;
+    padding: 2px;
+    width: 20px ;
+    margin: 10px 0;
+    
 }
