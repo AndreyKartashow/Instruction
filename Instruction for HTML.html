@@ -250,24 +250,28 @@
                 </p>
 
                 <form>
-                    <div class="Анкета">
-                        <label for="id1">Name</label>
-                        <input type="text" id="id1" value="Укажите имя" readonly>
+                    <div class="BoxRow">
+                        <div class="Name">
+                            <label for="id1">Name</label>
+                            <input type="text" id="id1" value="Укажите имя" readonly>
+                        </div>
+                    
+                        <div class="Age">
+                            <label for="id2">Age</label>
+                            <input type="number" id="id2" min="18" max="100" placeholder="Укажите возраст">
+                        </div>
                     </div>
 
-                    <div class="Анкета">
-                        <label for="id2">Age</label>
-                        <input type="number" id="id2" min="18" max="100" placeholder="Укажите возраст">
-                    </div>
+                    <div class="BoxRow">
+                        <div class="Email">
+                            <label for="id3">Email</label>
+                            <input type="email" id="id3" placeholder="Укажите email">
+                        </div>
 
-                    <div class="Анкета">
-                        <label for="id3">Email</label>
-                        <input type="email" id="id3" placeholder="Укажите email">
-                    </div>
-
-                    <div class="Анкета">
-                        <label for="id4">Password</label>
-                        <input type="password" id="id4" placeholder="Введите пароль">
+                        <div class="Password">
+                            <label for="id4">Password</label>
+                            <input type="password" id="id4" placeholder="Введите пароль">
+                        </div>
                     </div>
                 </form>
 
@@ -292,7 +296,7 @@
                 </p>
 
                 <form>
-                    <div>
+                    <div class="BoxRow">
                         <label for="id5">Range</label>
                         <input type="range" id="id5" min="0" max="100">
                     </div>
@@ -311,7 +315,7 @@
                 </p>
 
                 <form>
-                    <div>
+                    <div class="BoxRow">
                         <label for="id6">Data</label>
                         <input type="date" id="id6">
                     </div>
@@ -330,7 +334,7 @@
                 </p>
 
                 <form>
-                    <div>
+                    <div class="BoxRow">
                         <label for="id7">Color</label>
                         <input type="color" id="id7">
                     </div>
@@ -349,7 +353,7 @@
                 </p>
 
                 <form>
-                    <div>
+                    <div class="BoxRow">
                         <label for="id8">Message</label>
                         <br>
                         <textarea id="id8" placeholder="Напишите комментарий"></textarea>
@@ -370,7 +374,7 @@
                 </p>
 
                 <form>
-                    <div>
+                    <div class="Box">
                         <label for="id9">Sex</label>
                         <select id="id9">
                             <option value="male">Мужчина</option>
@@ -378,7 +382,7 @@
                         </select>
                     </div>
                     <br>
-                    <div>
+                    <div class="Box">
                         <label>Count Works</label>
                         <input type="radio" name="1"> 1
                         <input type="radio" name="1"> 2
@@ -386,7 +390,7 @@
                         <input type="radio" name="1"> +10
                     </div>
                     <br>
-                    <div>
+                    <div class="Box">
                         <label>Food</label>
                         <input type="checkbox" name="food"> Мясо
                         <input type="checkbox" name="food"> Рыба
@@ -411,7 +415,7 @@
                 </p>
 
                 <form>
-                    <div>
+                    <div class="Box">
                         <input type="submit" value="Отправить форму">
                         <button type="submit">Отмена</button>
                     </div>
@@ -431,8 +435,13 @@
             </article>
 
             <footer>
-                <form action="Instruction for CSS.html">
-                    <div>
+                <form action="Menu.html" class="Nav1">
+                    <div >
+                        <button type="submit">Главная страница</button>
+                    </div>
+                </form>
+                <form action="Instruction for CSS.html" class="Nav1">
+                    <div >
                         <button type="submit">Cледующая страница</button>
                     </div>
                 </form>
