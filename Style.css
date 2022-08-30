@@ -16,7 +16,7 @@ header
     color: white;
     padding-top: 15px;
     padding-left: 20px;
-    border: 3px solid;
+    border: 5px solid;
     border-color:rgb(223, 223, 223);
 }
 
@@ -32,10 +32,7 @@ footer
     padding-bottom: 15px;
 }
 
-#Заголовок_раздела
-{
-    padding-bottom: 10px;
-}
+
 
 p, h2, h3, h4
 {
@@ -49,10 +46,11 @@ ul, ol
 
 table
 {
-    margin:auto ;
+    margin:auto;
     width: 75%;
     text-align: center;
-    padding-bottom: 15px;
+    box-sizing:border-box; /* границы принадлежат боксу */
+    border-collapse: collapse; /*устранение разрыва в границах таблицы*/
 }
 
 table tr:nth-child(odd) /* even */
@@ -60,9 +58,11 @@ table tr:nth-child(odd) /* even */
     background: whitesmoke;
 }
 
-td
+td, tr
 {
+    padding: 8px;
     border: 1px solid;
+    box-sizing:border-box;
 }
 
 #Примеры
@@ -80,11 +80,49 @@ td
     margin: auto;
 }
 
-.Анкета 
+.BoxRow
 {
-    display: block;
-    padding: 2px;
-    width: 20px ;
-    margin: 10px 0;
     
+    display: inline-block;
+    width: 49%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px 40px 10px;  
+}
+
+.BoxRow input
+{
+    width: 70%;
+    outline: none;
+    display: inline;
+    margin-bottom: 5px;
+}
+
+.Box
+{
+    width: 75%;
+    padding: 10px 10px; 
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.But
+{
+    padding: 10px 10px; 
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.Nav1
+{
+    display: inline-block;
+    width: 49%;;
+    text-align: center;
+}
+
+.Nav2
+{
+    display: inline-block;
+    width: 33%;;
+    text-align: center;
 }
