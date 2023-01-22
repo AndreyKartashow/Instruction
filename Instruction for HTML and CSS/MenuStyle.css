@@ -24,6 +24,7 @@ body
     margin-top: 10px;
     background-color:black;
     opacity: 1;
+    box-shadow: 10px 5px 5px rgb(132, 134, 134);
 }
 
 .Card
@@ -37,7 +38,8 @@ body
     height: 100px;
     display: block;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    box-shadow: 10px 5px 5px rgb(132, 134, 134);
 }
 
 .Card:hover
@@ -53,6 +55,11 @@ body
 #CSS
 {
     background-color:orange;
+}
+
+#Linux
+{
+    background-color:lightcoral;
 }
 
 #GIT
