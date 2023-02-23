@@ -1,87 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="styly/StyleAuth.css">
+</head>
+<body>
+	<form id="login-form">
+		<h1>Авторизация</h1>
+		<input type="text" id="username" placeholder="Имя пользователя" required>
+		<input type="password" id="password" placeholder="Пароль" required>
+		<button type="submit">Войти</button>
+	</form>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Instruction for HTML and CSS</title>
-        <link rel="stylesheet" href="styly/MenuStyle.css">
-    </head>
-    
-    <body>
-        <form >
-            <div>
-                <button type="submit" class="CardHead" id="header">Instruction for Professional</button>
-            </div>
-        </form>
-        
-
-        <div class="model">
-            <form action="pages/Instruction for HTML.html">
-                <div>
-                    <button type="submit" class="Card" id="HTML">Instruction for HTML</button>
-                </div>
-            </form>
-        </div>
-
-
-        <div class="model">
-            <form action="pages/Instruction for CSS.html">
-                <div>
-                    <input type="submit" value="Instruction for CSS" class="Card" id="CSS">
-                </div>
-            </form>
-        </div>
-
-
-        <div class="model">
-            <form action="pages/Instruction for Linux.html">
-                <div>
-                    <input type="submit" value="Instruction for Linux-Ubunta" class="Card" id="Linux">
-                </div>
-            </form>
-        </div>
-
-
-        <div class="model">
-            <form action="">
-                <div>
-                    <input type="submit" value="Instruction for GIT" class="Card" id="GIT">
-                </div>
-            </form>
-        </div>
-
-        <div class="model">
-            <form action="">
-                <div>
-                    <input type="submit" value="Instruction for .MD" class="Card" id="MD">
-                </div>
-            </form>
-        </div>
-
-
-        <div class="model">
-            <form action="">
-                <div>
-                    <input type="submit" value="Useful Soft" class="Card" id="SOFT">
-                </div>
-            </form>
-        </div>
-
-
-        <div class="model">
-            <form action="">
-                <div>
-                    <input type="submit" value="Useful Links" class="Card" id="LINK">
-                </div>
-            </form>
-        </div>
-
-
-        <footer>
-            <p>Все права защищены</p>
-            <p>Email: patron6239@gmail.com</p>
-            <p>Contact number: 8-910-572-11-84</p>
-        </footer>
-    </body>
+	<script>
+		const form = document.getElementById("login-form");
+		form.addEventListener("submit", function(event) {
+			event.preventDefault();
+			const username = document.getElementById("username").value;
+			const password = document.getElementById("password").value;
+			if (username === "admin" && password === "admin123") {
+				window.location.href = "/Instruction/Instruction for HTML and CSS/pages/Menu.html";
+			} else {
+				alert("Неверное имя пользователя или пароль!");
+			}
+		});
+	</script>
+</body>
+</html>
